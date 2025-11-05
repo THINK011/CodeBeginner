@@ -1,0 +1,16 @@
+#Dice_rolling
+
+import random
+
+while True:
+    choices = input("Roll the dice? (y or n): ").lower()
+    if choices == "y":
+      dic1 = random.randint(1, 10)
+      dic2 = random.randint(1, 10)
+      print(f"{dic1} \n{dic2}")
+    elif choices == "n":
+      print("Thank you for playing!")
+      break
+    else:
+       print("Invalid input, please enter 'y' or 'n'.")
+   
